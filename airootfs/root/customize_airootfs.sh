@@ -3,18 +3,21 @@
 set -e -u
 
 # Encoding
-sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
+# sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
 sed -i 's/#\(fr_FR\.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
 
 # localtime
 ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime
 
-# create user
+# create root
 usermod -s /usr/bin/zsh root
+chmod 700 /root
+
+# create user
+useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/zsh muahah
 cp -aT /etc/skel/ /home/muahah
 chown muahah:users /home/muahah -R
-chmod 700 /root
 
 # SSHD
 sed -i 's/#\(PermitRootLogin \).\+/\1no/' /etc/ssh/sshd_config
