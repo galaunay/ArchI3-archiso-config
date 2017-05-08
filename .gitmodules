@@ -1,0 +1,3 @@
+[submodule "airootfs/etc/skel"]
+	path = airootfs/etc/skel
+	url = https://github.com/muahah/config
