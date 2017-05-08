@@ -3,7 +3,7 @@
 set -e -u
 
 # Encoding
-# sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
+sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
 sed -i 's/#\(fr_FR\.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
 
@@ -15,7 +15,7 @@ usermod -s /usr/bin/zsh root
 chmod 700 /root
 
 # create user
-useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/zsh muahah
+#useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/zsh muahah
 cp -aT /etc/skel/ /home/muahah
 chown muahah:users /home/muahah -R
 
@@ -37,7 +37,6 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 # Services
 systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default multi-user.target
-systemctl enable nullmailer
 
 # # Packer
 # git clone https://aur.archlinux.org/packer.git /tmp/packer
