@@ -10,14 +10,14 @@ locale-gen
 # localtime
 ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime
 
-# create root
-usermod -s /usr/bin/zsh root
-chmod 700 /root
+# # configure root
+# usermod -s /usr/bin/zsh root
+# chmod 700 /root
 
 # create user
-#useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/zsh muahah
-cp -aT /etc/skel/ /home/muahah
-chown muahah:users /home/muahah -R
+useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/zsh guest
+cp -aT /etc/skel/ /home/guest
+# chown muahah:users /home/muahah -R
 
 # SSHD
 sed -i 's/#\(PermitRootLogin \).\+/\1no/' /etc/ssh/sshd_config
