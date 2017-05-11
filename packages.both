@@ -1,3 +1,7 @@
+calamares
+kf5
+kpmcore
+base-devel
 arch-install-scripts
 b43-fwcutter
 btrfs-progs
@@ -144,6 +148,7 @@ pacman
 pciutils
 pcmciautils
 perl
+qt5
 phonon-qt5-gstreamer
 pkg-config
 plasma-framework
@@ -162,9 +167,14 @@ python-rope
 python-scikit-learn
 python-scipy
 python-statsmodels
+python2
 python2-matplotlib
 python2-numpy
 python2-scipy
+python2-pandas
+python2-scikit-learn
+python2-statsmodels
+python2-pip
 qutebrowser
 reiserfsprogs
 rofi
