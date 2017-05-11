@@ -1,3 +1,6 @@
 [submodule "airootfs/etc/skel"]
 	path = airootfs/etc/skel
 	url = https://github.com/muahah/config
+[submodule "airootfs/root/additional_packages/calamares"]
+	path = airootfs/root/additional_packages/calamares
+	url = https://github.com/calamares/calamares

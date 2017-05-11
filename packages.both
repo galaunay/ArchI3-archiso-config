@@ -1,5 +1,5 @@
-calamares
 kf5
+yaml-cpp
 kpmcore
 base-devel
 arch-install-scripts
@@ -149,6 +149,8 @@ pciutils
 pcmciautils
 perl
 qt5
+boost
+dmidecode
 phonon-qt5-gstreamer
 pkg-config
 plasma-framework

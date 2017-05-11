@@ -8,16 +8,26 @@ sed -i 's/#\(fr_FR\.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
 
 # localtime
-ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime
-
+ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime 
 # # configure root
 # usermod -s /usr/bin/zsh root
 # chmod 700 /root
 
+# GIve guest adminrights
+groupadd sudo
+sed -i 's/# \(%sudo\tALL=(ALL) ALL\)/\1/' /etc/sudoers
 # create user
-useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/zsh guest
+useradd -m -p "" -g users -G "sudo,adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/zsh guest
 cp -aT /etc/skel/ /home/guest
-# chown muahah:users /home/muahah -R
+chown guest:users /home/guest -R
+# update config through git if possiblr
+bck_dir=$(pwd)
+cd /home/guest
+git remote update
+git checkout master
+git pull --rebase
+git submodule update --init --recursive
+cd $bck_dir
 
 # SSHD
 sed -i 's/#\(PermitRootLogin \).\+/\1no/' /etc/ssh/sshd_config
@@ -33,6 +43,19 @@ sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
+
+# Additional packages
+#   Calamares
+bck_dir=$(pwd)
+cp -r /root/additional_packages/calamares /tmp/calamares
+cd /tmp/calamares
+git submodule update --init --recursive
+git clean -f -d
+rm -fr build
+mkdir -p build; cd build
+cmake ..; make
+rm -rf /root/additional_packages/calamares
+cd $bck_dir
 
 # Services
 systemctl enable pacman-init.service choose-mirror.service
