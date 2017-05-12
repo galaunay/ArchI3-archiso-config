@@ -36,7 +36,7 @@ git submodule update --init --recursive
 cd $bck_dir
 
 # Emacs
-emacs --eval '(kill-emacs)'
+emacs --script '~/.emacs.d/init.el'
 
 # SSHD
 sed -i 's/#\(PermitRootLogin \).\+/\1no/' /etc/ssh/sshd_config
@@ -63,9 +63,9 @@ mkdir -p build; cd build
 cmake ..; make; make install
 cd $bck_dir
 
-#   Packer
-git clone https://aur.archlinux.org/packer.git /tmp/packer
-makepkg -is --needed --noconfirm /tmp/packer
+# #   Packer
+# git clone https://aur.archlinux.org/packer.git /tmp/packer
+# makepkg -is --needed --noconfirm /tmp/packer
 
 # Services
 systemctl enable pacman-init.service choose-mirror.service
