@@ -36,7 +36,7 @@ git submodule update --init --recursive
 cd $bck_dir
 
 # Emacs
-emacs --eval '(server-shutdown)'
+emacs --eval '(kill-emacs)'
 
 # SSHD
 sed -i 's/#\(PermitRootLogin \).\+/\1no/' /etc/ssh/sshd_config
