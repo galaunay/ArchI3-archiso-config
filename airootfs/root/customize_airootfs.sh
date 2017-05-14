@@ -35,8 +35,8 @@ git pull --rebase
 git submodule update --init --recursive
 cd $bck_dir
 
-# Emacs
-emacs --script '~/.emacs.d/init.el'
+# semacs
+HOME=/home/guest; emacs --eval '(kill-emacs)'
 
 # SSHD
 sed -i 's/#\(PermitRootLogin \).\+/\1no/' /etc/ssh/sshd_config
