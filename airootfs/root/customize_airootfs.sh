@@ -67,6 +67,10 @@ cd $bck_dir
 # git clone https://aur.archlinux.org/packer.git /tmp/packer
 # makepkg -is --needed --noconfirm /tmp/packer
 
+# Add library paths
+echo "/usr/local/lib\n/usr/local/lib64" > /etc/ld.so.d/libc.conf
+ldconfig
+
 # Services
 systemctl enable pacman-init.service choose-mirror.service
 systemctl enable freshclamd.service
