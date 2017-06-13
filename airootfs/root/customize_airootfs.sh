@@ -53,15 +53,15 @@ sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
-# Additional packages
-#   Calamares
-git clone https://github.com/calamares/calamares /tmp/calamares
-bck_dir=$(pwd)
-cd /tmp/calamares
-git submodule update --init --recursive
-mkdir -p build; cd build
-cmake ..; make; make install
-cd $bck_dir
+## Additional packages
+##   Calamares
+#git clone https://github.com/calamares/calamares /tmp/calamares
+#bck_dir=$(pwd)
+#cd /tmp/calamares
+#git submodule update --init --recursive
+#mkdir -p build; cd build
+#cmake ..; make; make install
+#cd $bck_dir
 
 # #   Packer
 # git clone https://aur.archlinux.org/packer.git /tmp/packer
