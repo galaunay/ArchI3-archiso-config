@@ -37,6 +37,7 @@ cd $bck_dir
 
 # semacs
 HOME=/home/guest; emacs --eval '(kill-emacs)'
+HOME=/home/guest; emacs --eval '(kill-emacs)'
 
 # SSHD
 sed -i 's/#\(PermitRootLogin \).\+/\1no/' /etc/ssh/sshd_config
@@ -44,6 +45,9 @@ sed -i 's/#\(PasswordAuthentication \).\+/\1no/' /etc/ssh/sshd_config
 
 # Pacman
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
+
+# clamav
+useradd -u 64 clamav
 
 # Journal
 sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
@@ -53,22 +57,24 @@ sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
-## Additional packages
-##   Calamares
-#git clone https://github.com/calamares/calamares /tmp/calamares
-#bck_dir=$(pwd)
-#cd /tmp/calamares
-#git submodule update --init --recursive
-#mkdir -p build; cd build
-#cmake ..; make; make install
-#cd $bck_dir
+# Additional package source
+cat >> /etc/pacman.conf <<EOL
+[repo]
+SigLevel = Never
+Server = file///etc/pacman.d/repo
+EOL
 
-# #   Packer
-# git clone https://aur.archlinux.org/packer.git /tmp/packer
-# makepkg -is --needed --noconfirm /tmp/packer
+# Fix calamares missing libraries
+ln -s /usr/lib/libPythonQt_QtAll-Qt5-python3.so.3 /usr/lib/libPythonQtAll.so.1
+ln -s /usr/lib/libPythonQt-Qt5-python3.so.3 /usr/lib/libPythonQt.so.1
 
 # Add library paths
-echo "/usr/local/lib\n/usr/local/lib64" > /etc/ld.so.d/libc.conf
+mkdir -p /etc/ld.so.d
+touch /etc/ld.so.d/libc.conf
+cat >> /etc/ld.so.d/libc.conf <<EOL
+/usr/local/lib
+/usr/local/lib64
+EOL
 ldconfig
 
 # Services

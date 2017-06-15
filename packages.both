@@ -1,5 +1,9 @@
 kf5
+inotify-tools
 clamav
+pythonqt
+mkinitcpio-openswap
+calamares
 mlocate
 yaml-cpp
 kpmcore
