@@ -43,7 +43,6 @@ uuidd:x:68:
 systemd-coredump:x:997:
 dbus:x:81:
 systemd-journal-upload:x:998:
-muahah:x:1000:
 git:x:996:
 vboxsf:x:109:
 avahi:x:84:
