@@ -17,18 +17,18 @@ usermod -s /usr/bin/zsh root
 # Keyboard
 loadkeys fr
 
-# GIve guest adminrights
+# GIve liveuser adminrights
 groupadd sudo
 sed -i 's/# \(%sudo\tALL=(ALL) ALL\)/\1/' /etc/sudoers
 
 # Create user
-useradd -m -p "" -g users -G "sudo,adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/zsh guest
-cp -aT /etc/skel/ /home/guest
-chown guest:users /home/guest -R
+useradd -m -p "" -g users -G "sudo,adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/zsh liveuser
+cp -aT /etc/skel/ /home/liveuser
+chown liveuser:users /home/liveuser -R
 
 # Update user config through git if possible
 bck_dir=$(pwd)
-cd /home/guest
+cd /home/liveuser
 git remote update
 git checkout master
 git pull --rebase
@@ -36,8 +36,8 @@ git submodule update --init --recursive
 cd $bck_dir
 
 # semacs
-HOME=/home/guest; emacs --eval '(kill-emacs)'
-HOME=/home/guest; emacs --eval '(kill-emacs)'
+HOME=/home/liveuser; emacs --eval '(kill-emacs)'
+HOME=/home/liveuser; emacs --eval '(kill-emacs)'
 
 # SSHD
 sed -i 's/#\(PermitRootLogin \).\+/\1no/' /etc/ssh/sshd_config
