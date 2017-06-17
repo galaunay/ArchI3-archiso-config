@@ -64,12 +64,6 @@ SigLevel = Never
 Server = file///etc/pacman.d/repo
 EOL
 
-# Fix calamares missing libraries
-# ln -s /usr/lib/libPythonQt_QtAll-Qt5-python3.so.3 /usr/lib/libPythonQtAll.so.1
-# ln -s /usr/lib/libPythonQt-Qt5-python3.so.3 /usr/lib/libPythonQt.so.1
-# calamares branding
-cp /etc/calamares/branding/archi3.desc /usr/share/calamares/archi3.desc
-
 # Add library paths
 mkdir -p /etc/ld.so.d
 touch /etc/ld.so.d/libc.conf
