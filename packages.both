@@ -237,8 +237,7 @@ zsh
 freedns-daemon
 git-lfs
 i3blocks
-i3lock-lock
+i3lock-color
 mu 
 packer
-python-snakeviz
 wordnet
