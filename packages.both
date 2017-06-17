@@ -1,4 +1,7 @@
 kf5
+nullmailer
+maia-icon-theme
+xcursor-maia
 inotify-tools
 clamav
 calamares
@@ -230,3 +233,12 @@ xorg-server-common
 xorg-xinit
 yapf
 zsh
+# Archi3 repo
+freedns-daemon
+git-lfs
+i3blocks
+i3lock-lock
+mu 
+packer
+python-snakeviz
+wordnet
