@@ -57,13 +57,6 @@ sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
-# Additional package source
-cat >> /etc/pacman.conf <<EOL
-[repo]
-SigLevel = Never
-Server = file///etc/pacman.d/repo
-EOL
-
 # Add library paths
 mkdir -p /etc/ld.so.d
 touch /etc/ld.so.d/libc.conf
