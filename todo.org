@@ -1,0 +1,4 @@
+* remove automatic login for liveuser
+* set zsh as default for newly created users
+* makeautomatic startx
+* clam raise error if Mail dir does not exist
