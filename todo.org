@@ -1,4 +1,7 @@
 * remove automatic login for liveuser
+** Try removing autologin in calamares "removeuser.py"
 * set zsh as default for newly created users
+** Try the new option "availableShells" in calamares "users.conf"
 * makeautomatic startx
+** Added a new service "startx.service" and enabled it
 * clam raise error if Mail dir does not exist
