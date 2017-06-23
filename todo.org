@@ -5,3 +5,4 @@
 * makeautomatic startx
 ** Added a new service "startx.service" and enabled it
 * clam raise error if Mail dir does not exist
+* TODO livecd doesn't autologin nor autostart

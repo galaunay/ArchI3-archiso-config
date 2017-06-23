@@ -71,6 +71,5 @@ systemctl enable pacman-init.service choose-mirror.service
 systemctl enable freshclamd.service
 systemctl enable clamd.service
 systemctl set-default multi-user.target
-systemctl enable autologin@.service
-systemctl enable startx.service
+systemctl enable autologin@liveuser.service
 
