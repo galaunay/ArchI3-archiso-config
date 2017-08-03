@@ -29,10 +29,13 @@ chown liveuser:users /home/liveuser -R
 # Update user config through git if possible
 bck_dir=$(pwd)
 cd /home/liveuser
+git init
+git remote add origin https://github.com/galaunay/config
 git remote update
+git clean -f
 git checkout master
-git pull --rebase
 git submodule update --init --recursive
+chown -R liveuser:users /home/liveuser
 cd $bck_dir
 
 # semacs
