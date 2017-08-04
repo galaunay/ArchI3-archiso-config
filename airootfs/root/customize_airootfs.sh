@@ -26,7 +26,7 @@ useradd -m -p "" -g users -G "sudo,adm,audio,floppy,log,network,rfkill,scanner,s
 cp -aT /etc/skel/ /home/liveuser
 chown liveuser:users /home/liveuser -R
 
-# Update user config through git if possible
+# Add configuration from git
 bck_dir=$(pwd)
 cd /home/liveuser
 git init
@@ -36,6 +36,17 @@ git clean -f
 git checkout master
 git submodule update --init --recursive
 chown -R liveuser:users /home/liveuser
+cd $bck_dir
+
+# Add configuration to skel for new users
+bck_dir=$(pwd)
+cd /etc/skel
+git init
+git remote add origin https://github.com/galaunay/config
+git remote update
+git clean -f
+git checkout master
+git submodule update --init --recursive
 cd $bck_dir
 
 # semacs
