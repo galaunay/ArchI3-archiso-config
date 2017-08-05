@@ -80,6 +80,9 @@ cat >> /etc/ld.so.d/libc.conf <<EOL
 EOL
 ldconfig
 
+# Remove vbox things
+rm -f /usr/lib/modules-load.d/virtualbox-guest-dkms.conf
+
 # Services
 systemctl enable pacman-init.service choose-mirror.service
 systemctl enable freshclamd.service
