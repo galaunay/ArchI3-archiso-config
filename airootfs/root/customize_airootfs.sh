@@ -59,6 +59,7 @@ sed -i 's/#\(PasswordAuthentication \).\+/\1no/' /etc/ssh/sshd_config
 
 # Pacman
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
+pacman -Suy
 
 # clamav
 useradd -u 64 clamav
@@ -82,6 +83,7 @@ ldconfig
 
 # Remove vbox things
 rm -f /usr/lib/modules-load.d/virtualbox-guest-dkms.conf
+sed -i '/^kvm:.*/d' /etc/gshadow
 
 # Services
 systemctl enable pacman-init.service choose-mirror.service

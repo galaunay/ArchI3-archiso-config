@@ -232,6 +232,7 @@ xfsprogs
 xorg-server
 xorg-server-common
 xorg-xinit
+xorg-xset
 yapf
 zsh
 # Archi3 repo
