@@ -90,5 +90,7 @@ systemctl enable pacman-init.service choose-mirror.service
 systemctl enable freshclamd.service
 systemctl enable clamd.service
 systemctl set-default multi-user.target
+systemctl disable getty@.service
+systemctl disable getty@tty1.service
 systemctl enable autologin@liveuser.service
 
