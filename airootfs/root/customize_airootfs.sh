@@ -61,7 +61,7 @@ sed -i 's/#\(PasswordAuthentication \).\+/\1no/' /etc/ssh/sshd_config
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
 pacman-key --init
 pacman-key --populate archlinux
-pacman -Suy
+pacman -Suy --noconfirm
 
 
 # clamav
@@ -96,4 +96,5 @@ systemctl set-default multi-user.target
 systemctl disable getty@.service
 systemctl disable getty@tty1.service
 systemctl enable autologin@liveuser.service
+systemctl enable NetworkManager
 
