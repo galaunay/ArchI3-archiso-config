@@ -59,7 +59,10 @@ sed -i 's/#\(PasswordAuthentication \).\+/\1no/' /etc/ssh/sshd_config
 
 # Pacman
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
+pacman-key --init
+pacman-key --populate archlinux
 pacman -Suy
+
 
 # clamav
 useradd -u 64 clamav
