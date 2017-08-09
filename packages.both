@@ -1,5 +1,11 @@
 kf5
 pulseaudio
+alsa-lib
+alsa-plugins
+alsa-tools
+biber
+alsa-firmware
+alsa-utils
 ttf-inconsolata
 htop
 nullmailer
