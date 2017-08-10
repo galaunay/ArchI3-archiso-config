@@ -1,4 +1,6 @@
 kf5
+gufw
+ufw
 pulseaudio
 alsa-lib
 alsa-plugins
