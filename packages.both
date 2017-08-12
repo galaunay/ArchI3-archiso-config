@@ -1,4 +1,5 @@
 kf5
+mkinitcpio-openswap
 gufw
 ufw
 pulseaudio
