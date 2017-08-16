@@ -3,6 +3,8 @@ gnome-keyring
 urxvt-perls
 xorg-xbacklight
 xorg-xprop
+xorg-xrandr
+vlc
 mkinitcpio-openswap
 gufw
 ufw
