@@ -2,6 +2,7 @@ kf5
 gnome-keyring
 urxvt-perls
 xorg-xbacklight
+xorg-xprop
 mkinitcpio-openswap
 gufw
 ufw
