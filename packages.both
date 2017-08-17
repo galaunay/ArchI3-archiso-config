@@ -5,6 +5,7 @@ xorg-xbacklight
 xorg-xprop
 xorg-xrandr
 vlc
+gparted
 mkinitcpio-openswap
 gufw
 ufw
@@ -88,6 +89,7 @@ tcpdump
 testdisk
 usb_modeswitch
 vim-minimal
+perl-file-mimeinfo
 vpnc
 wget
 wireless_tools
