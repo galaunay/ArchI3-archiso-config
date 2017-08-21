@@ -126,6 +126,7 @@ ndisc6
 netctl
 network-manager-applet
 networkmanager
+networkmanager-openvpn
 nfs-utils
 nilfs-utils
 nmap
@@ -227,6 +228,7 @@ ttf-bitstream-vera
 ttf-inconsolata
 udevil
 ufw
+unzip
 urxvt-perls
 usb_modeswitch
 usbutils

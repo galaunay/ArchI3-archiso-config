@@ -8,7 +8,7 @@ sed -i 's/#\(fr_FR\.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
 
 # localtime
-ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime 
+ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime
 
 # configure root
 usermod -s /usr/bin/zsh root
@@ -98,3 +98,5 @@ systemctl disable getty@tty1.service
 systemctl enable autologin@liveuser.service
 systemctl enable NetworkManager
 
+# time synchronization
+timedatectl set-ntp  yes
