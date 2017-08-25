@@ -25,6 +25,7 @@ calamares
 clamav
 clonezilla
 conky
+copyq
 coreutils
 crda
 cryptsetup
@@ -65,6 +66,7 @@ fsarchiver
 gawk
 gcc-libs
 gettext
+gimp
 git
 glibc
 gnome-keyring
@@ -195,7 +197,6 @@ sed
 sg3_utils
 shadow
 smartmontools
-spectacle
 speedtouch
 squashfs-tools
 sudo
@@ -206,6 +207,7 @@ sysstat
 systemd-sysvcompat
 tar
 tcpdump
+teiler
 testdisk
 texinfo
 texlive-bibtexextra
