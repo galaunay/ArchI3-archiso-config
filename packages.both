@@ -181,6 +181,7 @@ python2-pip
 python2-scikit-learn
 python2-scipy
 python2-statsmodels
+qt4
 qt5
 qutebrowser
 refind-efi
