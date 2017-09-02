@@ -63,6 +63,7 @@ firefox
 flake8
 flex
 fsarchiver
+fzf
 gawk
 gcc-libs
 gettext
@@ -123,6 +124,7 @@ mdadm
 mkinitcpio-openswap
 mlocate
 mlocate
+mplayer
 mtools
 nano
 ndisc6
@@ -266,6 +268,7 @@ xorg-xset
 yaml-cpp
 yapf
 zd1211-firmware
+zip
 zsh
 
 # Archi3 repo
