@@ -176,6 +176,7 @@ python-rope
 python-scikit-learn
 python-scipy
 python-statsmodels
+python-sympy
 python2
 python2-matplotlib
 python2-numpy
