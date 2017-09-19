@@ -173,6 +173,7 @@ python-numpy
 python-pandas
 python-pip
 python-rope
+python-snakeviz
 python-scikit-learn
 python-scipy
 python-statsmodels
