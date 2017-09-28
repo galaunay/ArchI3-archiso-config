@@ -2,3 +2,4 @@ work
 out
 local_repo/repo*
 airootfs/etc/pacman.d/repo
+log.log
