@@ -69,6 +69,7 @@ gcc-libs
 gettext
 gimp
 git
+gksu
 glibc
 gnome-keyring
 gnu-netcat
