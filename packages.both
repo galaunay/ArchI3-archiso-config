@@ -9,6 +9,7 @@ arch-install-scripts
 aspell
 aspell-en
 aspell-fr
+at
 autoconf
 automake
 autopep8
