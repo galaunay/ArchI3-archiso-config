@@ -84,7 +84,6 @@ grub
 gufw
 gzip
 hdparm
-htop
 hub
 i3-gaps
 i3blocks-gaps
@@ -290,3 +289,4 @@ i3lock-color
 mu
 packer
 wordnet
+htop-vim-solarized
