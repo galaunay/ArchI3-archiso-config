@@ -180,6 +180,8 @@ python-scikit-learn
 python-scipy
 python-statsmodels
 python-sympy
+python-virtualenv
+python-virtualenvwrapper
 python2
 python2-matplotlib
 python2-numpy
