@@ -120,6 +120,7 @@ lvm2
 lxappearance
 lynx
 maia-icon-theme
+maim
 man-db
 man-pages
 mc
@@ -221,7 +222,6 @@ sysstat
 systemd-sysvcompat
 tar
 tcpdump
-teiler
 testdisk
 texinfo
 texlive-bibtexextra
