@@ -149,7 +149,6 @@ openssh
 openvpn
 openvpn
 os-prober
-owncloud-client
 pacman
 partclone
 parted
@@ -286,6 +285,7 @@ zsh
 # Archi3 repo
 howdoi
 freedns-daemon
+nextcloud-client
 git-lfs
 i3blocks
 i3lock-color
