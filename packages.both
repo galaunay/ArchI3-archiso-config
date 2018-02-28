@@ -86,7 +86,7 @@ gzip
 hdparm
 hub
 i3-gaps
-i3blocks-gaps
+i3blocks-gaps-git
 i3lock
 i3status
 imagemagick
@@ -251,7 +251,6 @@ urxvt-perls
 usb_modeswitch
 usbutils
 util-linux
-vertex-maia-themes
 vi
 vim
 vim-minimal
@@ -283,7 +282,6 @@ zip
 zsh
 
 # Archi3 repo
-howdoi
 freedns-daemon
 nextcloud-client
 git-lfs
