@@ -26,6 +26,7 @@ calamares
 clamav
 clonezilla
 conky
+compton
 copyq
 coreutils
 crda
@@ -39,6 +40,7 @@ dhclient
 dhcpcd
 dialog
 diffutils
+diff-so-fancy
 dmidecode
 dmraid
 dnsmasq
@@ -51,6 +53,7 @@ elinks
 emacs
 emms
 ethtool
+espeak
 exfat-utils
 extra-cmake-modules
 f2fs-tools
@@ -85,6 +88,7 @@ gufw
 gzip
 hdparm
 hub
+hwinfo
 i3-gaps
 i3blocks-gaps-git
 i3lock
@@ -153,6 +157,7 @@ pacman
 partclone
 parted
 partimage
+pavucontrol
 pciutils
 pcmciautils
 perl
@@ -166,6 +171,7 @@ procps-ng
 psmisc
 pstoedit
 pulseaudio
+pulseaudio-alsa
 python
 python-bottleneck
 python-html2text
@@ -251,8 +257,10 @@ urxvt-perls
 usb_modeswitch
 usbutils
 util-linux
+vertex-maia-themes
 vi
 vim
+vimiv
 vim-minimal
 virtualbox
 virtualbox-guest-utils
