@@ -95,6 +95,7 @@ systemctl disable getty@.service
 systemctl disable getty@tty1.service
 systemctl enable autologin@liveuser.service
 systemctl enable NetworkManager.service
+systemctl enable nullmailer.service
 
 # time synchronization
 # timedatectl set-ntp  yes

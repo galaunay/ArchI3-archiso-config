@@ -87,6 +87,7 @@ grub
 gufw
 gzip
 hdparm
+hosts-updater
 hub
 hwinfo
 i3-gaps
@@ -174,6 +175,7 @@ pulseaudio
 pulseaudio-alsa
 python
 python-bottleneck
+python-dbus
 python-html2text
 python-jedi
 python-matplotlib
