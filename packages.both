@@ -124,7 +124,7 @@ lsscsi
 lvm2
 lxappearance
 lynx
-maia-icon-theme
+maia-theme
 maim
 man-db
 man-pages
@@ -273,7 +273,6 @@ wireless_tools
 wpa_actiond
 wpa_supplicant
 wvdial
-xcursor-maia
 xf86-video-intel
 xfsprogs
 xl2tpd
