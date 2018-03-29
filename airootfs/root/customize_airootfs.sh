@@ -47,6 +47,9 @@ git remote update
 git clean -f
 git checkout master
 git submodule update --init --recursive
+# Add dummy .authinfo file and Downloads folder (for qute)
+touch .authinfo.gpg
+mkdir Downloads
 cd $bck_dir
 
 # semacs
@@ -62,7 +65,6 @@ sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
 pacman-key --init
 pacman-key --populate archlinux
 pacman -Suy --noconfirm
-
 
 # clamav
 useradd -u 64 clamav
@@ -86,7 +88,9 @@ ldconfig
 
 # Remove vbox things
 rm -f /usr/lib/modules-load.d/virtualbox-guest-dkms.conf
-sed -i '/^kvm:.*/d' /etc/gshadow
+useradd kvm
+useradd render
+useradd vboxuser
 
 # Services
 systemctl enable pacman-init.service choose-mirror.service
