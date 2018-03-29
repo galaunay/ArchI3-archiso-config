@@ -92,7 +92,6 @@ hub
 hwinfo
 i3-gaps
 i3blocks-gaps-git
-i3lock
 i3status
 imagemagick
 inetutils
@@ -119,6 +118,7 @@ linux
 linux-atm
 linux-headers
 logrotate
+lowbat
 lsof
 lsscsi
 lvm2
@@ -259,7 +259,6 @@ urxvt-perls
 usb_modeswitch
 usbutils
 util-linux
-vertex-maia-themes
 vi
 vim
 vimiv
@@ -289,14 +288,14 @@ yaml-cpp
 yapf
 zd1211-firmware
 zip
+zotero
 zsh
 
-# Archi3 repo
 freedns-daemon
 nextcloud-client
 git-lfs
-i3blocks
 i3lock-color
+i3lock-service
 mu
 packer
 wordnet
