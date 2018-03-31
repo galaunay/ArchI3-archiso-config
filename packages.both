@@ -283,6 +283,8 @@ xorg-xinit
 xorg-xprop
 xorg-xrandr
 xorg-xset
+xorg-xinput
+xorg-xev
 yaml-cpp
 yapf
 zd1211-firmware
