@@ -276,6 +276,7 @@ wireless_tools
 wpa_actiond
 wpa_supplicant
 wvdial
+xautolock
 xf86-video-intel
 xfsprogs
 xl2tpd
