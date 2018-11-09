@@ -158,6 +158,7 @@ pacman
 partclone
 parted
 partimage
+pass
 pavucontrol
 pciutils
 pcmciautils
@@ -180,6 +181,7 @@ python-html2text
 python-jedi
 python-matplotlib
 python-numexpr
+python-tldextract
 python-numpy
 python-pandas
 python-pip
