@@ -215,6 +215,7 @@ rsync
 rxvt-unicode
 s-nail
 samba
+screen
 screenfetch
 sdparm
 sed
@@ -309,3 +310,4 @@ packer
 wordnet
 whippet
 htop-vim-solarized
+protonmail-bridge
