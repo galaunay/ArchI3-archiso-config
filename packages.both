@@ -170,6 +170,7 @@ plasma-framework
 ppp
 pptpclient
 procps-ng
+progress
 psmisc
 pstoedit
 pulseaudio
@@ -306,7 +307,7 @@ git-lfs
 i3lock-color
 i3lock-service
 mu
-packer
+yay
 wordnet
 whippet
 htop-vim-solarized
