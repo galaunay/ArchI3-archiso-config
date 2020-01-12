@@ -1,314 +1,127 @@
-acpi
-alsa-firmware
-alsa-lib
-alsa-plugins
-alsa-tools
-alsa-utils
-apache
-arch-install-scripts
-aspell
-aspell-en
-aspell-fr
-at
-autoconf
-automake
-autopep8
-b43-fwcutter
-baobab
-base-devel
-bash
-biber
-bison
-boost
-btrfs-progs
-bzip2
-calamares
-clamav
-clonezilla
-conky
-compton
-copyq
-coreutils
-crda
-cryptsetup
-cython
-darkhttpd
-ddrescue
-device-mapper
-devtools
-dhclient
-dhcpcd
-dialog
-diffutils
-diff-so-fancy
-dmidecode
-dmraid
-dnsmasq
-dnsutils
-dosfstools
-dosfstools
-dunst
-e2fsprogs
-elinks
-emacs
-emms
-ethtool
-espeak
-exfat-utils
-extra-cmake-modules
-f2fs-tools
-fakeroot
-fasd
-feh
-file
-filesystem
-findutils
-firefox
-flake8
-flex
-fsarchiver
-fzf
-gawk
-gcc-libs
-gettext
-gimp
-git
-gksu
-glibc
-gnome-keyring
-gnu-netcat
-gparted
-gpm
-gptfdisk
-grep
-grml-zsh-config
-grub
-grub
-gufw
-gzip
-hdparm
-hosts-updater
-hub
-hwinfo
-i3-gaps
-i3blocks-gaps-git
-i3status
-imagemagick
-inetutils
-inkscape
-inotify-tools
-iproute2
-iputils
-ipw2100-fw
-ipw2200-fw
-irssi
-iw
-jfsutils
-jre8-openjdk
-kf5
-kpmcore
-less
-lftp
-libgnome-keyring
-libdvdcss
-libisoburn
-libreoffice-fresh
-licenses
-linux
-linux-atm
-linux-headers
-logrotate
-lowbat
-lsof
-lsscsi
-lvm2
-lxappearance
-lynx
-maia-theme
-maim
-man-db
-man-pages
-mc
-mdadm
-mkinitcpio-openswap
-mlocate
-mlocate
-mplayer
-mtools
-nano
-ndisc6
-netctl
-network-manager-applet
-networkmanager
-networkmanager-openvpn
-nfs-utils
-nilfs-utils
-nmap
-ntfs-3g
-ntp
-nullmailer
-offlineimap
-openconnect
-openssh
-openvpn
-openvpn
-os-prober
-pacman
-partclone
-parted
-partimage
-pass
-pavucontrol
-pciutils
-pcmciautils
-perl
-perl-file-mimeinfo
-phonon-qt5-gstreamer
-pkg-config
-plasma-framework
-ppp
-pptpclient
-procps-ng
-progress
-psmisc
-pstoedit
-pulseaudio
-pulseaudio-alsa
-python
-python-bottleneck
-python-dbus
-python-html2text
-python-jedi
-python-matplotlib
-python-numexpr
-python-tldextract
-python-numpy
-python-pandas
-python-pip
-python-rope
-python-snakeviz
-python-scikit-learn
-python-scipy
-python-statsmodels
-python-sympy
-python-virtualenv
-python-virtualenvwrapper
-python2
-python2-matplotlib
-python2-numpy
-python2-pandas
-python2-pip
-python2-scikit-learn
-python2-scipy
-python2-statsmodels
-pythonqt
-qt4
-qt5
-qutebrowser
-ranger
-reflector
-refind-efi
-reiserfsprogs
-rfkill
-rofi
-rp-pppoe
-rsync
-rxvt-unicode
-s-nail
-samba
-screen
-screenfetch
-sdparm
-sed
-sg3_utils
-sqlitebrowser
-shadow
-smartmontools
-speedtouch
-squashfs-tools
-sudo
-sudo
-sxiv
-sysfsutils
-sysstat
-systemd-sysvcompat
-tar
-tcpdump
-testdisk
-texinfo
-texlive-bibtexextra
-texlive-core
-texlive-fontsextra
-texlive-formatsextra
-texlive-games
-texlive-genericextra
-texlive-htmlxml
-texlive-humanities
-texlive-latexextra
-texlive-music
-texlive-pictures
-texlive-plainextra
-texlive-pstricks
-texlive-publishers
-texlive-science
-the_silver_searcher
-thunar
-traceroute
-tree
-ttf-bitstream-vera
-ttf-cm-unicode
-ttf-dejavu
-udevil
-ufw
-unzip
-urxvt-perls
-urlscan
-usb_modeswitch
-usbutils
-util-linux
-vi
-vim
-vimiv
-vim-minimal
-virtualbox
-virtualbox-guest-utils
-vlc
-vpnc
-wget
-which
-wireless_tools
-wpa_actiond
-wpa_supplicant
-wvdial
-xautolock
-xf86-video-intel
-xfsprogs
-xl2tpd
-xorg-server
-xorg-server-common
-xorg-xbacklight
-xorg-xinit
-xorg-xprop
-xorg-xrandr
-xorg-xset
-xorg-xinput
-xorg-xev
-yaml-cpp
-yapf
-zd1211-firmware
-zip
-zotero
-zsh
-
-opennic-up
-freedns-daemon
-nextcloud-client
-git-lfs
-i3lock-color
-i3lock-service
-mu
-yay
-wordnet
-whippet
-htop-vim-solarized
-protonmail-bridge
+acpilight 1.2-1
+alsa-tools 1.1.7-1
+aspell-en 2018.04.16-1
+aspell-fr 0.50.3-8
+at 3.2.1-1
+autoconf 2.69-6
+automake 1.16.1-2
+base 2-2
+bat 0.12.1-1
+bison 3.5-1
+bitlbee 3.6-1
+borg 1.1.10-3
+breeze-icons 5.65.0-2
+clang 9.0.1-1
+cython 0.29.14-4
+deluge 2.0.4.dev23+g2f1c008a2-1
+diff-so-fancy 1.2.7-1
+dunst 1.4.1-1
+efitools 1.9.2-1
+fakeroot 1.24-2
+fasd 1.0.1-2
+feh 3.3-2
+firefox 72.0.1-1
+freedns-daemon 2-1
+fzf 0.20.0-1
+gdb 8.3.1-4
+ghc 8.6.5-1
+gimp 2.10.14-1
+gnu-netcat 0.7.1-7
+gparted 1.0.0-1
+grub 2:2.04-5
+hosts-updater 0-1
+htop-vim-solarized 2.2.0-1
+i3blocks-gaps-git 1.4.r42.gb3de5e9-1
+inkscape 0.92.4-10
+inotify-tools 3.20.1-1
+intel-ucode 20191115-3
+languagetool 4.7-1
+libreoffice-fresh 6.3.4-2
+maia-theme 1-0
+man-pages 5.04-2
+mesa-demos 8.4.0-2
+mimeo 2019.7-2
+mlocate 0.26.git.20170220-2
+mpv 1:0.31.0-1
+msmtp 1.8.7-1
+mu-git 1.3.5.6.ged6842e5-1
+ncdu 1.14.1-1
+netctl 1.20-2
+network-manager-applet 1.8.24-1
+networkmanager-openvpn 1.8.10-1
+networkmanager-qt 5.65.0-3
+networkmanager-wireguard-git r87.0e1124d-1
+nextcloud-client 2.6.2-1
+nmap 7.80-1
+nullmailer 2.2-2
+nvidia-dkms 440.44-10
+nvidia-prime 1.0-1
+offlineimap 7.3.2-1
+pamixer 1.4-2
+pandoc 2.8-14
+pass-git-helper 1.1.0-1
+protonmail-bridge 1.2.2-1
+pulsemixer 1.5.0-2
+python-tldextract 2.2.2-1
+qutebrowser 1.9.0-1
+ranger 1.9.2-2
+reflector 2019.10-2
+rofi 1.5.4-1
+screen 4.7.0-1
+texlive-bibtexextra 2019.52577-1
+texlive-fontsextra 2019.52580-1
+texlive-formatsextra 2019.51280-1
+texlive-games 2019.52525-1
+texlive-humanities 2019.52574-1
+texlive-music 2019.52275-1
+texlive-pstricks 2019.52550-1
+texlive-publishers 2019.52538-1
+texlive-science 2019.52582-1
+torrench 1.0.1-1
+traceroute 2.1.0-5
+ttf-cm-unicode 0.7.0-2
+urxvt-perls 2.3-1
+vimiv 0.9.1-3
+virtualbox 6.1.0-1
+vlc 3.0.8-7
+wget 1.20.3-2
+wireshark-qt 3.2.0-1
+wordnet-cli 3.1-3
+xf86-video-intel 1:2.99.917+899+gf66d3954-1
+xf86-video-nouveau 1.0.16-1
+xf86-video-vesa 2.4.0-2
+xorg-docs 1.7.1-2
+xorg-fonts-100dpi 1.0.3-4
+xorg-fonts-75dpi 1.0.3-4
+xorg-iceauth 1.0.8-1
+xorg-luit 1.1.1-3
+xorg-server-xephyr 1.20.6-3
+xorg-server-xnest 1.20.6-3
+xorg-server-xvfb 1.20.6-3
+xorg-server-xwayland 1.20.6-3
+xorg-sessreg 1.1.2-1
+xorg-smproxy 1.0.6-2
+xorg-x11perf 1.6.1-1
+xorg-xcmsdb 1.0.5-2
+xorg-xcursorgen 1.0.7-1
+xorg-xdpyinfo 1.3.2-3
+xorg-xdriinfo 1.0.6-1
+xorg-xev 1.2.3-1
+xorg-xgamma 1.0.6-2
+xorg-xhost 1.0.8-1
+xorg-xinit 1.4.1-1
+xorg-xinput 1.6.3-1
+xorg-xkbevd 1.1.4-2
+xorg-xkbutils 1.0.4-3
+xorg-xkill 1.0.5-1
+xorg-xlsatoms 1.1.3-1
+xorg-xlsclients 1.1.4-1
+xorg-xpr 1.0.5-1
+xorg-xrefresh 1.0.6-1
+xorg-xsetroot 1.1.2-1
+xorg-xvinfo 1.1.4-1
+xorg-xwd 1.0.7-1
+xorg-xwininfo 1.1.5-1
+xorg-xwud 1.0.5-1
+yay 9.4.2-1
+zip 3.0-8
